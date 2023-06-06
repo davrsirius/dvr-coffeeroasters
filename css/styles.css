@@ -148,6 +148,8 @@ img {
   font-weight: bold;
   color: var(--text-color);
   transition: color 0.4s ease;
+  letter-spacing: 1px;
+  line-height: 14px;
 }
 
 .sitenav-link:hover {
