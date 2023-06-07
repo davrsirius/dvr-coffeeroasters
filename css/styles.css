@@ -115,6 +115,7 @@ img {
 .site-header-logo-link {
   display: flex;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .site-header-logo-link:hover {
@@ -150,6 +151,7 @@ img {
   transition: color 0.4s ease;
   letter-spacing: 1px;
   line-height: 14px;
+  white-space: nowrap;
 }
 
 .sitenav-link:hover {
