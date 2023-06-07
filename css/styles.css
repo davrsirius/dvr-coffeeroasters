@@ -48,6 +48,7 @@
   --black-color: #000;
   --white-color: #fff;
   --light-brown: #f3d7b7;
+  --light-green-bg: #f8f8f2;
 }
 
 /* GLOBAL PROPS */
@@ -147,6 +148,8 @@ img {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /* SITE HEADER HERO WRAPPER */
@@ -250,6 +253,7 @@ img {
   line-height: 24px;
   margin: 0;
 }
+
 .hero-text:not(:last-child) {
   margin-bottom: 34px;
 }
@@ -265,6 +269,89 @@ img {
   height: 696px;
 }
 
+/* INDEX COLLECTION */
+
+
+.index-collection {}
+
+.index-collection-inner {
+  padding: 50px 143px;
+  background-color: var(--light-green-bg);
+  background-image: url('../img/index-collection-bg.jpg');
+
+}
+
+.index-collection-heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: all-small-caps;
+  color: var(--black-color);
+}
+
+.index-collection-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+
+.index-collection-img {
+  width: 450px;
+  height: 375px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.index-collection-info {
+  flex-grow: 1;
+  padding-left: 117px;
+  padding-right: 117px;
+}
+
+.index-collection-info-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  font-variant: all-small-caps
+}
+
+.index-collection-info-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.index-collection-info-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.index-collection-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* .index-collection-item:nth-child(odd) .index-collection-info {
+  padding-left: 117px;
+}
+.index-collection-item:nth-child(even) .index-collection-info  {
+  padding-left: 157px;
+} */
+
+
+
+
+
+
+
+
+
 /* RETINA BGS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -277,4 +364,8 @@ only screen and (min-resolution: 2dppx) {
     background-image: url('../img/site-header-bg@2x.jpg');
   }
 
+  .index-collection-inner {
+    background-image: url('../img/index-collection-bg@2x.jpg');
+
+  }
 }
