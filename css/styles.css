@@ -196,6 +196,8 @@ img {
   list-style: none;
 }
 
+
+
 .sitenav-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -211,6 +213,11 @@ img {
   line-height: 14px;
   white-space: nowrap;
 }
+.sitenav-link-medium-font {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
 
 .sitenav-link:hover {
   color: var(--accent-color-green);
@@ -222,8 +229,6 @@ img {
 
 
 /* HERO */
-
-.hero {}
 
 .hero-container {
   display: flex;
@@ -273,7 +278,6 @@ img {
 /* INDEX COLLECTION */
 
 
-.index-collection {}
 
 .index-collection-inner {
   padding: 50px 143px;
@@ -351,7 +355,7 @@ img {
 
 /* INDEX FEATURES */
 
-.index-features {}
+
 
 .index-features-inner {
   padding: 50px 30px;
@@ -507,6 +511,70 @@ img {
 }
 
 
+/* SITE FOOTER */
+.site-footer {
+  background-color: var(--light-brown);
+  background-image: url(../img/site-header-bg.jpg);
+  padding: 65px 0;
+}
+
+.site-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-logo-link {
+  display: flex;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.site-footer-logo-img {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.site-footer-logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-footer-logo-link:active {
+  opacity: 0.6;
+}
+
+/* FOOTER SOCIALS */
+.socials {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+.socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  transition: color 0.4s ease;
+}
+
+.socials-link svg {
+  /* width: 30px;
+  height: 30px; */
+}
+.socials-link:hover {
+  color: var(--accent-color-green);
+}
+.socials-link:active {
+  opacity: 0.6;
+}
+
+
 
 
 
@@ -518,7 +586,8 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
 
-  .site-header-hero-wrapper {
+  .site-header-hero-wrapper,
+  .site-footer {
     background-image: url('../img/site-header-bg@2x.jpg');
   }
 
